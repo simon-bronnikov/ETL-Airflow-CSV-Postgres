@@ -113,7 +113,7 @@ def write_in_postgres(dataframe, name):
         .mode("overwrite")\
         .save()
 
-#write_in_postgres(rank_day_time_delays, 'rank_day_time_delays')
-#write_in_postgres(top_5_flight_cancellation, 'top_5_flight_cancellation')
-#write_in_postgres(top_5_avg_delay, 'top_5_avg_delay')
+write_in_postgres(rank_day_time_delays, 'rank_day_time_delays')
+write_in_postgres(top_5_flight_cancellation, 'top_5_flight_cancellation')
+write_in_postgres(top_5_avg_delay, 'top_5_avg_delay')
 
