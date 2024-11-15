@@ -24,7 +24,6 @@ with DAG(
     spark_sumbit_task = SparkSubmitOperator(
         task_id = 'spark_submit_task',
         application = '/Users/workspace/Desktop/DE/my_venv/Airflow/dags/scripts/csv_postgres_tops.py',  
-        verbose = True,
         conn_id = 'spark_default',
         conf = {"spark.master": "spark://spark-master:7077"}
     )
